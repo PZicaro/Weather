@@ -1,0 +1,101 @@
+*{
+    padding:0px;
+    margin:0px;
+    text-decoration:none;
+    font-family:  sans-serif;
+}
+body{
+    background-image: url(./imagens/landscape-g02cbb8ffd_1280.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+
+}
+main{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100vw;
+    height:100vh;
+    backdrop-filter: blur(5px);
+   
+}
+.box{
+    width:25rem;
+    min-width:280px;
+    height:20rem;
+    border-radius:20px;
+    background-color: rgba(228, 224, 224, 0.363);
+}
+.information{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.weather{
+    background-color: rgba(0, 0, 0, 0.767);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    color: rgb(233, 223, 223);
+}
+
+.icon{
+    height: 7em;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.insert-text{
+    width: 260px;
+    height: 40px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: none;
+}
+.degrees-text{
+    font-size: 5rem;
+}
+
+  h3{
+    font-size:2em;
+  }
+  p{
+    font-size:1.5em;
+   font-weight:bold;
+  }
+  button{
+    margin-left: 10px;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.7;
+    }
+}
+.error{
+    border: solid 2px rgb(184, 28, 28);
+    &::placeholder{
+        color: rgb(212, 17, 17);
+    }
+}
+@media (max-width: 300px)
+{
+    button{
+        margin-left: 10px;
+        width: 50px;
+        }
+    
+}
